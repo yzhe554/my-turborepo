@@ -16,6 +16,21 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "main": {
+      "cache": false
+    },
+    "sub-task-1": {
+      "cache": true,
+      "outputs": ["generated/**"]
+    },
+    "sub-task-2": {
+      "cache": true
     }
-  }
+  },
+  "remoteCache": {
+		"enabled": true,
+		"teamSlug": "Test",
+		"apiUrl": ""
+	}
 }

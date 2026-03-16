@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
-    "check-types": "next typegen && tsc --noEmit"
+    "check-types": "next typegen && tsc --noEmit",
+    "sub-task-1": "node scripts/codegen.js",
+    "sub-task-2": "echo 'Running sub-task-2'",
+    "main": "turbo run sub-task-1"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
